@@ -7,7 +7,7 @@
 	(title_block
 		(title "ASR 2024 - Electric Motor Circuit")
 		(date "2024-09-16")
-		(rev "v0.0.1")
+		(rev "v0.0.2")
 		(company "Alexandre Haddad-Delaveau & Bryan Liu")
 	)
 	(lib_symbols
@@ -425,6 +425,256 @@
 				)
 			)
 		)
+		(symbol "power:+VDC"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+VDC"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+VDC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+VDC_0_1"
+				(polyline
+					(pts
+						(xy -1.143 3.175) (xy 1.143 3.175)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.032) (xy 0 4.318)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 3.175)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+VDC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:-VDC"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "-VDC"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"-VDC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "-VDC_0_1"
+				(polyline
+					(pts
+						(xy -1.143 3.175) (xy 1.143 3.175)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 3.175)
+					(radius 1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "-VDC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -646,23 +896,93 @@
 		(at 63.5 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6488749b-82cf-4148-bcc5-4d31d1d46f5f")
+		(uuid "0d6f9352-cab1-4d01-8b19-bdc319a8eb26")
 	)
 	(junction
 		(at 63.5 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8c8f4c70-a77c-4a1a-9946-cf43149caf82")
+		(uuid "5a2acaae-33af-46eb-b208-b9028534a1dd")
 	)
 	(wire
 		(pts
-			(xy 50.8 132.08) (xy 58.42 132.08)
+			(xy 73.66 154.94) (xy 88.9 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "111b9da5-54b8-43ee-a060-119d1493ca69")
+		(uuid "028a5c03-ab02-4ff8-8bea-648705a05b37")
+	)
+	(wire
+		(pts
+			(xy 88.9 144.78) (xy 88.9 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2af709f8-d6e4-4fa5-a046-10f524be4091")
+	)
+	(wire
+		(pts
+			(xy 63.5 139.7) (xy 81.28 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e417917-4784-47c0-85ec-eb84c9c6a695")
+	)
+	(wire
+		(pts
+			(xy 101.6 152.4) (xy 114.3 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33db662f-4edd-4e4f-9f9f-6b4e5f7f7b0f")
+	)
+	(wire
+		(pts
+			(xy 63.5 139.7) (xy 63.5 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36276238-be60-4ccf-a103-0486b9f693b3")
+	)
+	(wire
+		(pts
+			(xy 88.9 134.62) (xy 101.6 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41cac0fd-3d3b-40de-9b8a-9733eee36da1")
+	)
+	(wire
+		(pts
+			(xy 101.6 134.62) (xy 101.6 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68caa908-4e8c-4a23-ad76-e2ffb6a09086")
+	)
+	(wire
+		(pts
+			(xy 38.1 190.5) (xy 38.1 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73a7f245-3e06-4d4f-8a42-ee9cc1beaff7")
 	)
 	(wire
 		(pts
@@ -672,110 +992,40 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "23dacc29-e39a-4034-8be7-bf42357b016a")
+		(uuid "83a6c2d5-e111-4976-9717-a3631662a558")
 	)
 	(wire
 		(pts
-			(xy 63.5 139.7) (xy 88.9 139.7)
+			(xy 38.1 139.7) (xy 63.5 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "266fc9bb-a53e-4f0b-85cc-0c92fde11ef1")
+		(uuid "adf6eec6-8a75-4e84-b8c7-6104bcd7f803")
 	)
 	(wire
 		(pts
-			(xy 68.58 132.08) (xy 99.06 132.08)
+			(xy 63.5 165.1) (xy 114.3 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33a2a233-08ac-438a-ab7b-341597f3cdf8")
-	)
-	(wire
-		(pts
-			(xy 38.1 152.4) (xy 50.8 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36e973e1-8137-4f66-acc4-75ecc0d15543")
-	)
-	(wire
-		(pts
-			(xy 88.9 139.7) (xy 88.9 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dc1698a-ccee-411e-a27a-1984c1318207")
-	)
-	(wire
-		(pts
-			(xy 63.5 139.7) (xy 63.5 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "772e3c41-b0c2-42c0-aa7a-10e746da4375")
-	)
-	(wire
-		(pts
-			(xy 38.1 165.1) (xy 63.5 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca84e9e6-1a37-442f-a3d9-61f7ea205232")
-	)
-	(wire
-		(pts
-			(xy 88.9 165.1) (xy 88.9 190.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0dff948-6950-4da2-b75a-c0239b69d815")
-	)
-	(wire
-		(pts
-			(xy 99.06 132.08) (xy 99.06 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd9007e5-18ce-41af-b5e9-cdf3cd6a723a")
-	)
-	(wire
-		(pts
-			(xy 50.8 132.08) (xy 50.8 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "feb025f0-81c1-4fae-ba33-c59e962acbc7")
+		(uuid "c4117d22-1c99-4818-8aa1-518be567d4ca")
 	)
 	(symbol
-		(lib_id "power:VCC")
-		(at 63.5 190.5 0)
+		(lib_id "power:+VDC")
+		(at 114.3 152.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "198fe566-523a-4138-938b-11fd9ec9c574")
+		(uuid "4950b5d7-5635-48eb-a8ab-3aedd4a7303e")
 		(property "Reference" "#PWR01"
-			(at 63.5 194.31 0)
+			(at 111.76 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -783,16 +1033,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
-			(at 63.5 185.42 0)
+		(property "Value" "M+"
+			(at 120.65 152.3999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 190.5 0)
+			(at 114.3 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -801,7 +1052,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 190.5 0)
+			(at 114.3 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -809,8 +1060,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 63.5 190.5 0)
+		(property "Description" ""
+			(at 114.3 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -819,7 +1070,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "85313f3d-9f47-43d3-84db-af4ca9726a10")
+			(uuid "7ab70181-fb98-4123-b963-87d1e56a5393")
 		)
 		(instances
 			(project ""
@@ -831,88 +1082,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Q_NMOS_DGS")
-		(at 63.5 134.62 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ed1395a-4069-46c7-a5a7-a76cb48dc897")
-		(property "Reference" "Q1"
-			(at 63.5 125.73 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Q_NMOS_DGS"
-			(at 63.5 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 60.96 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 63.5 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 63.5 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0db37e7f-7ac8-4c92-84c8-16235a61bd5c")
-		)
-		(pin "3"
-			(uuid "901383a4-9230-4a01-8041-e5b1b84dc856")
-		)
-		(pin "2"
-			(uuid "900e94cd-fb3b-4437-91cb-de9bca5e0d66")
-		)
-		(instances
-			(project ""
-				(path "/75cb3666-e798-47d5-a64e-682dd769d21a"
-					(reference "Q1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 88.9 190.5 0)
+		(at 63.5 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "48736f42-3719-4faa-96dd-77763c880259")
-		(property "Reference" "#PWR02"
-			(at 88.9 196.85 0)
+		(uuid "7470a29f-1399-4d24-90b3-851f48aafca1")
+		(property "Reference" "#PWR04"
+			(at 63.5 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -921,7 +1101,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 195.58 0)
+			(at 63.5 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -929,7 +1109,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 190.5 0)
+			(at 63.5 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -938,7 +1118,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 190.5 0)
+			(at 63.5 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -947,7 +1127,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 190.5 0)
+			(at 63.5 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -956,7 +1136,149 @@
 			)
 		)
 		(pin "1"
-			(uuid "c5c76137-e9b6-49d8-8000-afcb53fbbb31")
+			(uuid "d0531fa5-9d1a-4210-84ff-a3ed629e2a86")
+		)
+		(instances
+			(project ""
+				(path "/75cb3666-e798-47d5-a64e-682dd769d21a"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Magnetic:A1302KUA-T")
+		(at 66.04 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7792453a-c751-4f56-8aac-61fb4f4019f2")
+		(property "Reference" "U2"
+			(at 59.69 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "A1302KUA-T"
+			(at 59.69 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
+			(at 63.5 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Linear Hall Effect Sensor, SIP 3pin"
+			(at 66.04 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dac1d922-fdb7-40ed-85a4-7982a9e2078e")
+		)
+		(pin "3"
+			(uuid "c42de1b2-0792-443c-94af-48174428a774")
+		)
+		(pin "2"
+			(uuid "e10a732b-4dd5-4376-8e7e-015bb3b67c38")
+		)
+		(instances
+			(project ""
+				(path "/75cb3666-e798-47d5-a64e-682dd769d21a"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-VDC")
+		(at 114.3 165.1 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0931365-7603-4482-b6e3-cc597fb99955")
+		(property "Reference" "#PWR02"
+			(at 111.76 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "M-"
+			(at 120.65 165.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "987e7df5-241f-485f-b1b0-6c67f95aa54c")
 		)
 		(instances
 			(project ""
@@ -968,46 +1290,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Sensor_Magnetic:A1302KUA-T")
-		(at 91.44 154.94 0)
+		(lib_id "power:VCC")
+		(at 38.1 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "57236c1a-1a96-4c59-a086-874e7dd8f5e8")
-		(property "Reference" "U1"
-			(at 85.09 153.6699 0)
+		(uuid "e4f8bf04-520f-4331-80ee-897fe2475c50")
+		(property "Reference" "#PWR03"
+			(at 38.1 194.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(hide yes)
 			)
 		)
-		(property "Value" "A1302KUA-T"
-			(at 85.09 156.2099 0)
+		(property "Value" "VCC"
+			(at 38.1 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx"
-			(at 88.9 154.94 0)
+			(at 38.1 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1015,8 +1325,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Linear Hall Effect Sensor, SIP 3pin"
-			(at 91.44 154.94 0)
+		(property "Datasheet" ""
+			(at 38.1 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 38.1 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1025,18 +1344,85 @@
 			)
 		)
 		(pin "1"
-			(uuid "9949bb05-0e0a-4a1e-82d7-bd8d8d3f9574")
-		)
-		(pin "3"
-			(uuid "7993805b-7dbe-45f1-ac1b-a786c1a266d3")
-		)
-		(pin "2"
-			(uuid "aaa41462-8f7c-4d6c-8399-d0c9f68ff8b9")
+			(uuid "48828524-6e97-4d10-b576-16472c363810")
 		)
 		(instances
 			(project ""
 				(path "/75cb3666-e798-47d5-a64e-682dd769d21a"
-					(reference "U1")
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_NMOS_DGS")
+		(at 86.36 139.7 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eeb0e7a1-a8ea-4b84-bb9d-1f322a61f7d8")
+		(property "Reference" "Q2"
+			(at 92.71 138.4299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_NMOS_DGS"
+			(at 92.71 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "N-MOSFET transistor, drain/gate/source"
+			(at 86.36 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "aba71fea-6466-4f2c-9c6e-a7eb30c15cf1")
+		)
+		(pin "1"
+			(uuid "cd789e1c-a0d2-4023-8f32-eca4f42d35c5")
+		)
+		(pin "2"
+			(uuid "3ff1f35d-1ce1-4245-a57b-184b478591b4")
+		)
+		(instances
+			(project ""
+				(path "/75cb3666-e798-47d5-a64e-682dd769d21a"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
