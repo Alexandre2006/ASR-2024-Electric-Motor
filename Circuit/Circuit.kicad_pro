@@ -224,7 +224,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -386,6 +386,30 @@
     [
       "75cb3666-e798-47d5-a64e-682dd769d21a",
       "Root"
+    ],
+    [
+      "397f5f37-8507-4f9a-b6af-5266aa733c62",
+      "H-Bridge 3"
+    ],
+    [
+      "aa6905d2-9f06-4703-a617-e56630ad200b",
+      "H-Bridge 2"
+    ],
+    [
+      "6805cc6b-80e0-465f-8a88-47342c456d94",
+      "H-Bridge 1"
+    ],
+    [
+      "34174c80-1df9-4754-82c6-539d1074b657",
+      "Inverter 1"
+    ],
+    [
+      "1f6dd413-13d1-4cdc-9665-38756413fe89",
+      "Inverter 2"
+    ],
+    [
+      "f304899a-546b-4342-945f-896799fe9f4e",
+      "Inverter 3"
     ]
   ],
   "text_variables": {}
