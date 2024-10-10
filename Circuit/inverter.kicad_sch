@@ -5,10 +5,11 @@
 	(uuid "89ba2cea-763e-4123-960a-74a25d945167")
 	(paper "A4")
 	(title_block
-		(date "2024-09-25")
-		(rev "v0.0.5")
+		(title "ASR 2024 - Digital Signal Inverter")
+		(date "2024-09-30")
+		(rev "v0.1.0")
 		(company "Alexandre Haddad-Delaveau & Bryan Liu")
-		(comment 1 "Pinout of transistors and hall chips are subject to change.")
+		(comment 1 "Pinouts are subject to change.")
 		(comment 2 "Resistor values are subject to change.")
 		(comment 3 "Warning:")
 	)
@@ -443,7 +444,7 @@
 		(uuid "c37a5b1f-dcec-4b44-af3b-05af4f687f43")
 	)
 	(hierarchical_label "OUT"
-		(shape input)
+		(shape output)
 		(at 116.84 88.9 0)
 		(fields_autoplaced yes)
 		(effects
@@ -455,7 +456,7 @@
 		(uuid "64659056-4fc1-42f1-9141-9176e3f67546")
 	)
 	(hierarchical_label "GND"
-		(shape input)
+		(shape output)
 		(at 96.52 127 270)
 		(fields_autoplaced yes)
 		(effects
@@ -555,6 +556,10 @@
 			(project "Circuit"
 				(path "/75cb3666-e798-47d5-a64e-682dd769d21a/1f6dd413-13d1-4cdc-9665-38756413fe89"
 					(reference "R16")
+					(unit 1)
+				)
+				(path "/75cb3666-e798-47d5-a64e-682dd769d21a/34174c80-1df9-4754-82c6-539d1074b657"
+					(reference "R?")
 					(unit 1)
 				)
 				(path "/75cb3666-e798-47d5-a64e-682dd769d21a/f304899a-546b-4342-945f-896799fe9f4e"
@@ -659,6 +664,10 @@
 			(project "Circuit"
 				(path "/75cb3666-e798-47d5-a64e-682dd769d21a/1f6dd413-13d1-4cdc-9665-38756413fe89"
 					(reference "Q6")
+					(unit 1)
+				)
+				(path "/75cb3666-e798-47d5-a64e-682dd769d21a/34174c80-1df9-4754-82c6-539d1074b657"
+					(reference "Q?")
 					(unit 1)
 				)
 				(path "/75cb3666-e798-47d5-a64e-682dd769d21a/f304899a-546b-4342-945f-896799fe9f4e"
